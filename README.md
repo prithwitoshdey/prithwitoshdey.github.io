@@ -1,2 +1,2 @@
 # prithwitoshdey.github.io
-Super cool github pages site
+Personal website for academic and non-academic purposes
