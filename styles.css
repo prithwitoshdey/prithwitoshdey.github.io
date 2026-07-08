@@ -9,7 +9,7 @@
 
 body {
   background-color: rgb(6, 7, 12);
-  font-family: inter;
+  font-family: "IBM Plex Serif", serif;
   background-image: url(background-img.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -166,10 +166,6 @@ cursor: pointer;
 
 /* Right section */
 
-.hero-right {
-  transition: background-color 3s, box-shadow 3s;
-  cursor: pointer;
-}
 .hero-right:hover {
   background-color: rgba(6, 7, 12, 0.705);
   box-shadow: 
@@ -178,78 +174,36 @@ cursor: pointer;
     0 0 100px rgb(6, 7, 12),
     0 0 200px rgb(6, 7, 12);
 }
-
-/* Animations */
-@keyframes fadeIn {
-  from{
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
-  }
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.project-video {
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    max-width: 500px;   /* Smaller */
+    border-radius: 12px;
+    object-fit: cover;
 }
 
-@keyframes fadeInTop {
-  from{
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
-  }
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
 }
 
-@keyframes backgroundZoom {
-  from{
-    background-size: 80%;
-  }
-  to{
-    background-size: 100%;
-  }
+.project-figure {
+    margin: 0;
 }
 
-
-
-
-/* Apply Animations */
-h1 {
-  animation: fadeIn 1.2s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.2s;
-}
-
-h3 {
-  animation: fadeIn 1.4s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.4s;
-}
-
-p {
-  animation: fadeIn 1.6s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.6s;
-}
-button {
-  animation: fadeIn 1.8s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.8s;
-}
-
-.social-icon {
-  animation: fadeIn 2s ease-out forwards;
-  opacity: 0;
-  animation-delay: 1s;
-}
-
-.nav-item,
-.left-section {
-  animation: fadeInTop 1s ease-in forwards;
-  opacity: 0;
-}
-
-body {
-  animation: backgroundZoom 3s ease-in forwards;
+.project-figure figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: lightgray;
+    font-style: italic;
+    line-height: 1.4;
 }
