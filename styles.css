@@ -206,4 +206,30 @@ cursor: pointer;
     color: lightgray;
     font-style: italic;
     line-height: 1.4;
+}.bibliography {
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+
+.bibliography h2 {
+    margin-bottom: 20px;
+}
+
+.bibliography ol {
+    margin-left: 25px;
+}
+
+.bibliography li {
+    color: lightgray;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.bibliography a {
+    color: #3FA2F6;
+}
+
+.bibliography a:hover {
+    text-decoration: underline;
 }
